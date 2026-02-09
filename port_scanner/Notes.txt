@@ -1,0 +1,21 @@
+Permanent Fix:
+# Add your user to the docker group
+sudo usermod -aG docker $USER
+
+# Log out and log back in (or run this to apply immediately in current shell)
+newgrp docker
+
+# Test without sudo
+docker network ls
+
+Quick Fix: 
+#Prefix all commands with sudo
+
+
+Network: csce413_assignment2_vulnerable_network
+Web App IP: 172.20.0.10
+Database IP: 172.20.0.11
+
+Immediate --> Go to Summary for Instructions
+
+
