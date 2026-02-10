@@ -92,21 +92,8 @@ def test_wrong_sequence(target, correct_sequence, delay):
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Port knocking client",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Send knock sequence
-  python3 knock_client.py --target 172.20.0.40
-  
-  # Send knock and check if port opens
-  python3 knock_client.py --target 172.20.0.40 --check
-  
-  # Custom sequence
-  python3 knock_client.py --target 172.20.0.40 --sequence 1111,2222,3333
-  
-  # Test wrong sequence
-  python3 knock_client.py --target 172.20.0.40 --test-wrong
-        """
+        formatter_class=argparse.RawDescriptionHelpFormatter
+        
     )
     parser.add_argument("--target", required=True, help="Target host or IP")
     parser.add_argument(

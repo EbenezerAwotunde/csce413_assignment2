@@ -299,26 +299,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='Advanced Port Scanner for Network Security',
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Scan a single host
-  python3 scanner.py --target 172.20.0.10 --ports 1-1000
-  
-  # Scan with more threads for speed
-  python3 scanner.py --target 172.20.0.10 --ports 1-10000 --threads 200
-  
-  # Scan a subnet using CIDR notation
-  python3 scanner.py --target 172.20.0.0/24 --ports 1-1000
-  
-  # Scan specific ports
-  python3 scanner.py --target 172.20.0.10 --ports 22,80,443,3306,8080
-  
-  # Export results to JSON
-  python3 scanner.py --target 172.20.0.10 --ports 1-1000 --output results.json
-  
-  # Verbose output
-  python3 scanner.py --target 172.20.0.10 --ports 1-100 --verbose
-        """
+        
     )
     
     parser.add_argument(

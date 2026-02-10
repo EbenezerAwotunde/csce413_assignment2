@@ -13,6 +13,33 @@ Web App IP: 172.20.0.10
 Database IP: 172.20.0.11
 br-b9f51b5c9130
 
+Examples:
+  # Scan a single host
+  python3 scanner.py --target 172.20.0.10 --ports 1-1000
+  
+  # Scan with more threads for speed
+  python3 scanner.py --target 172.20.0.10 --ports 1-10000 --threads 200
+  
+  # Scan a subnet using CIDR notation
+  python3 scanner.py --target 172.20.0.0/24 --ports 1-1000
+  
+  # Scan specific ports
+  python3 scanner.py --target 172.20.0.10 --ports 22,80,443,3306,8080
+  
+  # Export results to JSON
+  python3 scanner.py --target 172.20.0.10 --ports 1-1000 --output results.json
+  
+  # Verbose output
+  python3 scanner.py --target 172.20.0.10 --ports 1-100 --verbose
+        """
+
+To try: 
+python3 scanner.py --target 172.21.0.10 --ports 1-10000  # webapp
+python3 scanner.py --target 172.21.0.11 --ports 1-10000  # database  
+python3 scanner.py --target 172.21.0.20 --ports 1-10000  # secret_ssh
+python3 scanner.py --target 172.21.0.21 --ports 1-10000  # secret_api
+python3 scanner.py --target 172.21.0.22 --ports 1-10000  # redis
+
 # May need to include this in the command for MITM command: -i br-b9f51b5c9130
 
 To run MITM script: sudo python3 capture_traffic.py
@@ -30,7 +57,7 @@ To run MITM script: sudo python3 capture_traffic.py
 1. cd port_knocking
 2. nc 172.21.0.40 2222   # Should fail (port blocked)
 3. python3 knock_client.py --target 172.21.0.40 --sequence 1234,5678,9012
-4. nc 172.21.0.40 2222   # Should work (within 30 seconds)
+4. nc 172.21.0.40 2222   #  (within 30 seconds)
 
 # Or use one-liner:
 python3 knock_client.py --target 172.21.0.40 --sequence 1234,5678,9012 && nc 172.21.0.40 2222
@@ -129,3 +156,9 @@ sleep 2 && \
 tail -20 logs/honeypot.log && \
 echo "=== CAPTURED CREDENTIALS ===" && \
 cat logs/connections.jsonl | jq -r 'select(.event=="auth_attempt") | "\(.username):\(.credential)"'
+
+
+1. Executive Summary Demo (2-3 minutes)
+Brief overview of what you'll demonstrate
+Show the Docker environment running (docker-compose ps)
+Quick tour of your completed implementations
