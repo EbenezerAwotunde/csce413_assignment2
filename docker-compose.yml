@@ -20,7 +20,7 @@ services:
         condition: service_healthy
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.10
+        ipv4_address: 172.21.0.10
     restart: on-failure
 
   database:
@@ -37,7 +37,7 @@ services:
       MYSQL_SSL_MODE: DISABLED
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.11
+        ipv4_address: 172.21.0.11
     volumes:
       - db_data:/var/lib/mysql
     healthcheck:
@@ -57,7 +57,7 @@ services:
       - 1.1.1.1
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.20
+        ipv4_address: 172.21.0.20
 
   secret_api:
     container_name: 2_network_secret_api
@@ -69,7 +69,7 @@ services:
       - 1.1.1.1
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.21
+        ipv4_address: 172.21.0.21
 
   redis:
     container_name: 2_network_redis
@@ -81,7 +81,7 @@ services:
       - 1.1.1.1
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.22
+        ipv4_address: 172.21.0.22
 
   # TODO: Feel free to update honeypot if needed
   honeypot:
@@ -96,7 +96,7 @@ services:
       - "2222:22"
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.30
+        ipv4_address: 172.21.0.30
     volumes:
       - ./honeypot/logs:/app/logs
 
@@ -113,15 +113,15 @@ services:
       - NET_ADMIN
     networks:
       vulnerable_network:
-        ipv4_address: 172.20.0.40
+        ipv4_address: 172.21.0.40
 
 networks:
   vulnerable_network:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.20.0.0/16
-          gateway: 172.20.0.1
+        - subnet: 172.21.0.0/16
+          gateway: 172.21.0.1
 
 volumes:
   db_data:

@@ -1,0 +1,123 @@
+{
+  "summary": {
+    "total_packets": 10,
+    "sql_queries": 1,
+    "auth_events": 3,
+    "sensitive_data_items": 1
+  },
+  "sql_queries": [
+    {
+      "timestamp": "2026-02-09T17:31:51.753547",
+      "query": "SELECT id, secret_name, secret_value, description              FROM secrets              WHERE id = 1"
+    }
+  ],
+  "sensitive_data": [
+    {
+      "type": "FLAG",
+      "data": "FLAG{n3tw0rk_tr4ff1c_1s_n0t_s3cur3}",
+      "timestamp": "2026-02-09T17:31:51.753925"
+    }
+  ],
+  "packets": [
+    {
+      "timestamp": "2026-02-09T17:31:51.744239",
+      "src_ip": "172.20.0.11",
+      "dst_ip": "172.20.0.10",
+      "src_port": 3306,
+      "dst_port": 40678,
+      "payload_hex": "4a0000000a382e302e343500b80900000b7e4175596b2b4a00fff7ff0200ff9f15000000000000000000004c364c1e6e36286d1d2e655e006d7973716c5f6e61746976655f70617373776f726400",
+      "payload_decoded": "J\u0000\u0000\u0000\n8.0.45\u0000\t\u0000\u0000\u000b~AuYk+J\u0000\u0002\u0000\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000L6L\u001en6(m\u001d.e^\u0000mysql_native_password\u0000",
+      "payload_length": 78
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.751170",
+      "src_ip": "172.20.0.10",
+      "dst_ip": "172.20.0.11",
+      "src_port": 40678,
+      "dst_port": 3306,
+      "payload_hex": "8a0000010da23a00ffffff002d0000000000000000000000000000000000000000000000726f6f74001461ebbf0a6cf15f55c6c0e6ddd993272f6c41ee38757365726462006d7973716c5f6e61746976655f70617373776f726400320c5f636c69656e745f6e616d650770796d7973716c0f5f636c69656e745f76657273696f6e05312e312e30045f7069640137",
+      "payload_decoded": "\u0000\u0000\u0001\r:\u0000\u0000-\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000root\u0000\u0014a\nl_U\u0653'/lA8userdb\u0000mysql_native_password\u00002\f_client_name\u0007pymysql\u000f_client_version\u00051.1.0\u0004_pid\u00017",
+      "payload_length": 142
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.752376",
+      "src_ip": "172.20.0.11",
+      "dst_ip": "172.20.0.10",
+      "src_port": 3306,
+      "dst_port": 40678,
+      "payload_hex": "0700000200000002000000",
+      "payload_decoded": "\u0007\u0000\u0000\u0002\u0000\u0000\u0000\u0002\u0000\u0000\u0000",
+      "payload_length": 11
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.752602",
+      "src_ip": "172.20.0.10",
+      "dst_ip": "172.20.0.11",
+      "src_port": 40678,
+      "dst_port": 3306,
+      "payload_hex": "1200000003534554204e414d455320757466386d6234",
+      "payload_decoded": "\u0012\u0000\u0000\u0000\u0003SET NAMES utf8mb4",
+      "payload_length": 22
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.752887",
+      "src_ip": "172.20.0.11",
+      "dst_ip": "172.20.0.10",
+      "src_port": 3306,
+      "dst_port": 40678,
+      "payload_hex": "0700000100000002000000",
+      "payload_decoded": "\u0007\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0000",
+      "payload_length": 11
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.753120",
+      "src_ip": "172.20.0.10",
+      "dst_ip": "172.20.0.11",
+      "src_port": 40678,
+      "dst_port": 3306,
+      "payload_hex": "1300000003534554204155544f434f4d4d4954203d2030",
+      "payload_decoded": "\u0013\u0000\u0000\u0000\u0003SET AUTOCOMMIT = 0",
+      "payload_length": 23
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.753340",
+      "src_ip": "172.20.0.11",
+      "dst_ip": "172.20.0.10",
+      "src_port": 3306,
+      "dst_port": 40678,
+      "payload_hex": "0700000100000000000000",
+      "payload_decoded": "\u0007\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "payload_length": 11
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.753547",
+      "src_ip": "172.20.0.10",
+      "dst_ip": "172.20.0.11",
+      "src_port": 40678,
+      "dst_port": 3306,
+      "payload_hex": "7c000000030a20202020202020202020202053454c4543542069642c207365637265745f6e616d652c207365637265745f76616c75652c206465736372697074696f6e200a20202020202020202020202046524f4d2073656372657473200a2020202020202020202020205748455245206964203d20310a2020202020202020",
+      "payload_decoded": "|\u0000\u0000\u0000\u0003\n            SELECT id, secret_name, secret_value, description \n            FROM secrets \n            WHERE id = 1\n        ",
+      "payload_length": 128
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.753925",
+      "src_ip": "172.20.0.11",
+      "dst_ip": "172.20.0.10",
+      "src_port": 3306,
+      "dst_port": 40678,
+      "payload_hex": "01000001042e0000020364656606757365726462077365637265747307736563726574730269640269640c3f000b000000030342000000400000030364656606757365726462077365637265747307736563726574730b7365637265745f6e616d650b7365637265745f6e616d650cff0090010000fd0110000000420000040364656606757365726462077365637265747307736563726574730c7365637265745f76616c75650c7365637265745f76616c75650cff00fcff0300fc1110000000400000050364656606757365726462077365637265747307736563726574730b6465736372697074696f6e0b6465736372697074696f6e0cff00fcff0300fc100000000005000006fe000001007d0000070131096170695f746f6b656e23464c41477b6e33747730726b5f747234666631635f31735f6e30745f7333637572337d4c4150492061757468656e7469636174696f6e20746f6b656e20666f7220736563726574207365727669636573202d204d49544d2061747461636b2077696c6c2072657665616c20746869732105000008fe00000100",
+      "payload_decoded": "\u0001\u0000\u0000\u0001\u0004.\u0000\u0000\u0002\u0003def\u0006userdb\u0007secrets\u0007secrets\u0002id\u0002id\f?\u0000\u000b\u0000\u0000\u0000\u0003\u0003B\u0000\u0000\u0000@\u0000\u0000\u0003\u0003def\u0006userdb\u0007secrets\u0007secrets\u000bsecret_name\u000bsecret_name\f\u0000\u0001\u0000\u0000\u0001\u0010\u0000\u0000\u0000B\u0000\u0000\u0004\u0003def\u0006userdb\u0007secrets\u0007secrets\fsecret_value\fsecret_value\f\u0000\u0003\u0000\u0011\u0010\u0000\u0000\u0000@\u0000\u0000\u0005\u0003def\u0006userdb\u0007secrets\u0007secrets\u000bdescription\u000bdescription\f\u0000\u0003\u0000\u0010\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0006\u0000\u0000\u0001\u0000}\u0000\u0000\u0007\u00011\tapi_token#FLAG{n3tw0rk_tr4ff1c_1s_n0t_s3cur3}LAPI authentication token for secret services - MITM attack will reveal this!\u0005\u0000\u0000\b\u0000\u0000\u0001\u0000",
+      "payload_length": 408
+    },
+    {
+      "timestamp": "2026-02-09T17:31:51.754394",
+      "src_ip": "172.20.0.10",
+      "dst_ip": "172.20.0.11",
+      "src_port": 40678,
+      "dst_port": 3306,
+      "payload_hex": "0100000001",
+      "payload_decoded": "\u0001\u0000\u0000\u0000\u0001",
+      "payload_length": 5
+    }
+  ]
+}
