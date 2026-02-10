@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Start both the knock server and protected service
 
+set -e
+
 echo "Starting port knocking services..."
 
 # Start the protected service in the background
@@ -11,7 +13,7 @@ SERVICE_PID=$!
 # Give it a moment to start
 sleep 1
 
-# Start the knock server (this runs in foreground)
+# Start the knock server (runs in foreground)
 echo "[2/2] Starting port knock server..."
 python3 knock_server.py
 

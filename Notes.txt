@@ -22,15 +22,110 @@ To run MITM script: sudo python3 capture_traffic.py
 - `-i INTERFACE`: Specify network interface (auto-detects by default)
 - `-c COUNT`: Capture specific number of packets
 
-#Port Knocking Demo to show it works -- You proteced SSH service
-1. ssh user@172.20.0.40 -p 2222
-2. cd port_knocking 
-3. python3 knock_client.py --target 172.20.0.40 --sequence 1234,5678,9012
-4. ssh user@172.20.0.40 -p 2222
-#Port knocking Demo to show it protects after sequence intiated
-5. python3 knock_client.py --target 172.20.0.40 --sequence 1234,9999,9012
-#Run Port Knocking Demo
+#Port Knocking Demo - Protected TCP Service
+# Container IP: 172.21.0.40 (auto-assigned)
+# No authentication needed - security is through port knocking
+# Port stays open for 30 seconds after successful knock
+
+1. cd port_knocking
+2. nc 172.21.0.40 2222   # Should fail (port blocked)
+3. python3 knock_client.py --target 172.21.0.40 --sequence 1234,5678,9012
+4. nc 172.21.0.40 2222   # Should work (within 30 seconds)
+
+# Or use one-liner:
+python3 knock_client.py --target 172.21.0.40 --sequence 1234,5678,9012 && nc 172.21.0.40 2222
+
+# Port knocking Demo - wrong sequence (IP gets locked for 5s)
+5. python3 knock_client.py --target 172.21.0.40 --sequence 1234,9999,9012 --test-wrong
+
+# Run automated demo (auto-detects IP):
 6. cd port_knocking
-7. bash demo.sh 172.20.0.40
-8. Check Port Knocking Logs: docker logs 2_network_port_knocking
-dddd
+7. ./demo.sh
+
+# Check Port Knocking Logs:
+8. docker logs 2_network_port_knocking
+
+# Quick test:
+9. ./test_knocking.sh
+
+================================================================================
+HONEYPOT DEMO COMMANDS
+================================================================================
+
+# Container IP: 172.21.0.30
+# Host Port: 2222 (mapped to container port 22)
+# Service: SSH Honeypot simulating OpenSSH 8.2p1 Ubuntu
+
+1. Start the honeypot:
+   cd /home/ebenezer/413/csce413_assignment2
+   sudo docker compose up --build honeypot
+   # Or in background: sudo docker compose up -d honeypot
+
+2. Test SSH connections (from another terminal):
+   # Basic connection test
+   ssh root@localhost -p 2222
+   
+   # Automated test with credentials
+   sshpass -p 'password123' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 2222 root@localhost
+   sshpass -p 'admin' ssh -o StrictHostKeyChecking=no -p 2222 admin@localhost
+   sshpass -p '12345678' ssh -o StrictHostKeyChecking=no -p 2222 test@localhost
+
+3. Run automated test suite:
+   cd honeypot/
+   ./test_honeypot.sh
+   # Or Python test client (no sshpass needed):
+   python3 test_client.py
+
+4. View live logs:
+   # Console logs (real-time)
+   docker compose logs -f honeypot
+   
+   # Or container logs directly
+   docker logs -f 2_network_honeypot
+
+5. Analyze captured data:
+   # Human-readable logs
+   cat honeypot/logs/honeypot.log
+   tail -50 honeypot/logs/honeypot.log
+   
+   # Structured JSON logs
+   cat honeypot/logs/connections.jsonl
+   cat honeypot/logs/connections.jsonl | jq '.'
+   
+   # Parse authentication attempts
+   cat honeypot/logs/connections.jsonl | jq -r 'select(.event=="auth_attempt") | "[\(.timestamp)] \(.source_ip) tried \(.username):\(.credential) via \(.method)"'
+   
+   # Top usernames tried
+   cat honeypot/logs/connections.jsonl | jq -r 'select(.event=="auth_attempt") | .username' | sort | uniq -c | sort -rn
+   
+   # Top passwords tried
+   cat honeypot/logs/connections.jsonl | jq -r 'select(.event=="auth_attempt") | .credential' | sort | uniq -c | sort -rn
+   
+   # All commands attempted
+   cat honeypot/logs/connections.jsonl | jq -r 'select(.event=="command") | .command'
+   
+   # Count total connections
+   cat honeypot/logs/connections.jsonl | grep '"event":"connected"' | wc -l
+
+6. Stop the honeypot:
+   docker compose down
+   # Or keep data: docker compose stop honeypot
+
+7. Check honeypot is running:
+   docker compose ps
+   sudo netstat -tlnp | grep 2222
+
+================================================================================
+QUICK HONEYPOT DEMO (ONE-LINER)
+================================================================================
+# Terminal 1: Start honeypot
+sudo docker compose up honeypot
+
+# Terminal 2: Attack it and view logs
+cd honeypot && \
+sshpass -p 'password' ssh -o StrictHostKeyChecking=no -p 2222 root@localhost 2>&1 & \
+sshpass -p 'admin' ssh -o StrictHostKeyChecking=no -p 2222 admin@localhost 2>&1 & \
+sleep 2 && \
+tail -20 logs/honeypot.log && \
+echo "=== CAPTURED CREDENTIALS ===" && \
+cat logs/connections.jsonl | jq -r 'select(.event=="auth_attempt") | "\(.username):\(.credential)"'

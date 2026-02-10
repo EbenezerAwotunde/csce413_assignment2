@@ -1,3 +1,230 @@
 {"timestamp": "2026-01-05T15:47:39.322396", "event": "connection", "client_ip": "172.20.0.1", "client_port": 40642}
 {"timestamp": "2026-01-05T15:47:47.059106", "event": "connection", "client_ip": "172.20.0.1", "client_port": 39300}
 {"timestamp": "2026-01-05T15:58:47.101147", "event": "connection", "client_ip": "172.20.0.1", "client_port": 58506}
+{"timestamp": "2026-02-10T05:47:11.081193", "event": "connected", "source_ip": "172.21.0.1", "source_port": 55152, "duration": null}
+{"timestamp": "2026-02-10T05:47:31.103014", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 55152, "duration": 20.021807}
+{"timestamp": "2026-02-10T05:47:56.638690", "event": "connected", "source_ip": "172.21.0.1", "source_port": 59068, "duration": null}
+{"timestamp": "2026-02-10T05:48:11.736894", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 59068, "duration": 15.098205}
+{"timestamp": "2026-02-10T05:48:33.593431", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42932, "duration": null}
+{"timestamp": "2026-02-10T05:48:36.586740", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42932, "duration": 2.993276}
+{"timestamp": "2026-02-10T05:48:56.135850", "event": "connected", "source_ip": "172.21.0.1", "source_port": 50722, "duration": null}
+{"timestamp": "2026-02-10T05:48:56.162216", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 50722, "username": "root", "credential": "password123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:48:56.681916", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 50722, "duration": 0.546039}
+{"timestamp": "2026-02-10T05:49:00.636746", "event": "connected", "source_ip": "172.21.0.1", "source_port": 50698, "duration": null}
+{"timestamp": "2026-02-10T05:49:00.701697", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 50698, "username": "admin", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:49:01.207918", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 50698, "duration": 0.571114}
+{"timestamp": "2026-02-10T05:49:03.880176", "event": "connected", "source_ip": "172.21.0.1", "source_port": 50714, "duration": null}
+{"timestamp": "2026-02-10T05:49:03.894506", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 50714, "username": "test", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:49:04.406893", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 50714, "duration": 0.52671}
+{"timestamp": "2026-02-10T05:50:27.532186", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44988, "duration": null}
+{"timestamp": "2026-02-10T05:50:27.535952", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44988, "duration": 0.003764}
+{"timestamp": "2026-02-10T05:50:27.545831", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44990, "duration": null}
+{"timestamp": "2026-02-10T05:50:27.561495", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44990, "username": "root", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:28.066674", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44990, "duration": 0.520836}
+{"timestamp": "2026-02-10T05:50:28.082172", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44992, "duration": null}
+{"timestamp": "2026-02-10T05:50:28.096491", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44992, "username": "root", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:28.602694", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44992, "duration": 0.520517}
+{"timestamp": "2026-02-10T05:50:29.121245", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44996, "duration": null}
+{"timestamp": "2026-02-10T05:50:29.134086", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44996, "username": "root", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:29.639511", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44996, "duration": 0.519056}
+{"timestamp": "2026-02-10T05:50:30.159235", "event": "connected", "source_ip": "172.21.0.1", "source_port": 45000, "duration": null}
+{"timestamp": "2026-02-10T05:50:30.172747", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 45000, "username": "root", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:30.678671", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 45000, "duration": 0.519429}
+{"timestamp": "2026-02-10T05:50:31.197477", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53370, "duration": null}
+{"timestamp": "2026-02-10T05:50:31.252129", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53370, "username": "root", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:31.757209", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53370, "duration": 0.559728}
+{"timestamp": "2026-02-10T05:50:32.274573", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53380, "duration": null}
+{"timestamp": "2026-02-10T05:50:32.287827", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53380, "username": "root", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:32.791932", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53380, "duration": 0.517352}
+{"timestamp": "2026-02-10T05:50:33.310886", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53386, "duration": null}
+{"timestamp": "2026-02-10T05:50:33.321905", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53386, "username": "admin", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:33.826237", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53386, "duration": 0.515343}
+{"timestamp": "2026-02-10T05:50:34.345800", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53390, "duration": null}
+{"timestamp": "2026-02-10T05:50:34.359609", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53390, "username": "admin", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:34.866491", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53390, "duration": 0.520688}
+{"timestamp": "2026-02-10T05:50:35.387949", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53404, "duration": null}
+{"timestamp": "2026-02-10T05:50:35.400679", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53404, "username": "admin", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:35.906058", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53404, "duration": 0.518104}
+{"timestamp": "2026-02-10T05:50:36.422857", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53416, "duration": null}
+{"timestamp": "2026-02-10T05:50:36.436410", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53416, "username": "admin", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:36.941458", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53416, "duration": 0.518592}
+{"timestamp": "2026-02-10T05:50:37.460987", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53418, "duration": null}
+{"timestamp": "2026-02-10T05:50:37.478530", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53418, "username": "admin", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:37.985406", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53418, "username": "admin", "credential": "", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:38.489236", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53418, "duration": 1.028244}
+{"timestamp": "2026-02-10T05:50:38.503992", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53422, "duration": null}
+{"timestamp": "2026-02-10T05:50:38.558988", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53422, "username": "test", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:39.065004", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53422, "duration": 0.561007}
+{"timestamp": "2026-02-10T05:50:39.590708", "event": "connected", "source_ip": "172.21.0.1", "source_port": 53432, "duration": null}
+{"timestamp": "2026-02-10T05:50:39.645459", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 53432, "username": "test", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:40.150552", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 53432, "duration": 0.559837}
+{"timestamp": "2026-02-10T05:50:40.669015", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52860, "duration": null}
+{"timestamp": "2026-02-10T05:50:40.684272", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52860, "username": "test", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:41.191270", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52860, "duration": 0.52224}
+{"timestamp": "2026-02-10T05:50:41.710612", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52862, "duration": null}
+{"timestamp": "2026-02-10T05:50:41.722730", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52862, "username": "test", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:42.228408", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52862, "duration": 0.51779}
+{"timestamp": "2026-02-10T05:50:42.746301", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52878, "duration": null}
+{"timestamp": "2026-02-10T05:50:42.757445", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52878, "username": "test", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:43.262812", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52878, "duration": 0.516505}
+{"timestamp": "2026-02-10T05:50:43.783764", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52892, "duration": null}
+{"timestamp": "2026-02-10T05:50:43.836902", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52892, "username": "ubuntu", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:44.343203", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52892, "duration": 0.559435}
+{"timestamp": "2026-02-10T05:50:44.863354", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52894, "duration": null}
+{"timestamp": "2026-02-10T05:50:44.917491", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52894, "username": "ubuntu", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:45.422993", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52894, "duration": 0.559632}
+{"timestamp": "2026-02-10T05:50:45.944542", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52898, "duration": null}
+{"timestamp": "2026-02-10T05:50:45.958781", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52898, "username": "ubuntu", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:46.468452", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52898, "duration": 0.523903}
+{"timestamp": "2026-02-10T05:50:46.985593", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52914, "duration": null}
+{"timestamp": "2026-02-10T05:50:46.997087", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52914, "username": "ubuntu", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:47.502084", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52914, "duration": 0.516485}
+{"timestamp": "2026-02-10T05:50:48.019825", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52930, "duration": null}
+{"timestamp": "2026-02-10T05:50:48.066310", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52930, "username": "ubuntu", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:48.569940", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52930, "duration": 0.550109}
+{"timestamp": "2026-02-10T05:50:49.087879", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52944, "duration": null}
+{"timestamp": "2026-02-10T05:50:49.101018", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52944, "username": "user", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:49.604960", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52944, "duration": 0.517075}
+{"timestamp": "2026-02-10T05:50:50.123532", "event": "connected", "source_ip": "172.21.0.1", "source_port": 52952, "duration": null}
+{"timestamp": "2026-02-10T05:50:50.135643", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 52952, "username": "user", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:50.640458", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 52952, "duration": 0.516918}
+{"timestamp": "2026-02-10T05:50:51.159701", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42912, "duration": null}
+{"timestamp": "2026-02-10T05:50:51.172840", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42912, "username": "user", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:51.679058", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42912, "duration": 0.519346}
+{"timestamp": "2026-02-10T05:50:52.201609", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42914, "duration": null}
+{"timestamp": "2026-02-10T05:50:52.220665", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42914, "username": "user", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:52.727204", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42914, "duration": 0.525591}
+{"timestamp": "2026-02-10T05:50:53.252504", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42930, "duration": null}
+{"timestamp": "2026-02-10T05:50:53.273463", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42930, "username": "user", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:53.781222", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42930, "duration": 0.528715}
+{"timestamp": "2026-02-10T05:50:54.316636", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42944, "duration": null}
+{"timestamp": "2026-02-10T05:50:54.327501", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42944, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:54.840245", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42944, "duration": 0.523608}
+{"timestamp": "2026-02-10T05:50:55.358675", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42952, "duration": null}
+{"timestamp": "2026-02-10T05:50:55.372722", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42952, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:55.878831", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42952, "duration": 0.520147}
+{"timestamp": "2026-02-10T05:50:56.396570", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42964, "duration": null}
+{"timestamp": "2026-02-10T05:50:56.448281", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42964, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:56.952974", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42964, "duration": 0.5564}
+{"timestamp": "2026-02-10T05:50:57.474551", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42980, "duration": null}
+{"timestamp": "2026-02-10T05:50:57.490618", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42980, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:57.996994", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42980, "duration": 0.522434}
+{"timestamp": "2026-02-10T05:50:58.517074", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42986, "duration": null}
+{"timestamp": "2026-02-10T05:50:58.532107", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42986, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T05:50:59.039479", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42986, "duration": 0.522398}
+{"timestamp": "2026-02-10T05:50:59.553572", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42994, "duration": null}
+{"timestamp": "2026-02-10T05:51:00.552476", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42994, "duration": 0.998901}
+{"timestamp": "2026-02-10T05:51:00.761966", "event": "connected", "source_ip": "172.21.0.1", "source_port": 47424, "duration": null}
+{"timestamp": "2026-02-10T05:51:01.764860", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 47424, "duration": 1.002892}
+{"timestamp": "2026-02-10T05:51:01.975724", "event": "connected", "source_ip": "172.21.0.1", "source_port": 47438, "duration": null}
+{"timestamp": "2026-02-10T05:51:02.982660", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 47438, "duration": 1.006594}
+{"timestamp": "2026-02-10T05:51:03.188163", "event": "connected", "source_ip": "172.21.0.1", "source_port": 47444, "duration": null}
+{"timestamp": "2026-02-10T05:51:04.189123", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 47444, "duration": 1.000964}
+{"timestamp": "2026-02-10T05:51:04.400324", "event": "connected", "source_ip": "172.21.0.1", "source_port": 47448, "duration": null}
+{"timestamp": "2026-02-10T05:51:05.399429", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 47448, "duration": 0.999102}
+{"timestamp": "2026-02-10T06:20:41.980767", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42826, "duration": null}
+{"timestamp": "2026-02-10T06:20:41.994017", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42838, "duration": null}
+{"timestamp": "2026-02-10T06:20:42.160794", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42826, "duration": 0.180258}
+{"timestamp": "2026-02-10T06:20:42.228066", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42838, "username": "root", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:42.738191", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42838, "duration": 0.744169}
+{"timestamp": "2026-02-10T06:20:42.771400", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42848, "duration": null}
+{"timestamp": "2026-02-10T06:20:42.841137", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42848, "username": "root", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:43.351739", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42848, "duration": 0.580591}
+{"timestamp": "2026-02-10T06:20:43.887849", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42852, "duration": null}
+{"timestamp": "2026-02-10T06:20:43.917044", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42852, "username": "root", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:44.425330", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42852, "duration": 0.537469}
+{"timestamp": "2026-02-10T06:20:44.964991", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42864, "duration": null}
+{"timestamp": "2026-02-10T06:20:45.028167", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42864, "username": "root", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:45.539909", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42864, "duration": 0.574904}
+{"timestamp": "2026-02-10T06:20:46.090348", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42880, "duration": null}
+{"timestamp": "2026-02-10T06:20:46.155774", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42880, "username": "root", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:46.666304", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42880, "duration": 0.575914}
+{"timestamp": "2026-02-10T06:20:47.208520", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42892, "duration": null}
+{"timestamp": "2026-02-10T06:20:47.240741", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42892, "username": "root", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:47.748289", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42892, "duration": 0.539758}
+{"timestamp": "2026-02-10T06:20:48.299618", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42908, "duration": null}
+{"timestamp": "2026-02-10T06:20:48.362732", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42908, "username": "admin", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:48.875955", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42908, "duration": 0.576344}
+{"timestamp": "2026-02-10T06:20:49.411885", "event": "connected", "source_ip": "172.21.0.1", "source_port": 42920, "duration": null}
+{"timestamp": "2026-02-10T06:20:49.440625", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 42920, "username": "admin", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:49.947977", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 42920, "duration": 0.536086}
+{"timestamp": "2026-02-10T06:20:50.480948", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49678, "duration": null}
+{"timestamp": "2026-02-10T06:20:50.544388", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49678, "username": "admin", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:51.063992", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49678, "duration": 0.583034}
+{"timestamp": "2026-02-10T06:20:51.649764", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49692, "duration": null}
+{"timestamp": "2026-02-10T06:20:51.715677", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49692, "username": "admin", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:52.230404", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49692, "duration": 0.580623}
+{"timestamp": "2026-02-10T06:20:52.765574", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49704, "duration": null}
+{"timestamp": "2026-02-10T06:20:52.797004", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49704, "username": "admin", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:53.306306", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49704, "duration": 0.540722}
+{"timestamp": "2026-02-10T06:20:53.836703", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49706, "duration": null}
+{"timestamp": "2026-02-10T06:20:53.857680", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49706, "username": "test", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:54.364652", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49706, "duration": 0.528108}
+{"timestamp": "2026-02-10T06:20:54.896116", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49712, "duration": null}
+{"timestamp": "2026-02-10T06:20:54.920434", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49712, "username": "test", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:55.430739", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49712, "duration": 0.534613}
+{"timestamp": "2026-02-10T06:20:55.971075", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49722, "duration": null}
+{"timestamp": "2026-02-10T06:20:55.997919", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49722, "username": "test", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:56.523892", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49722, "duration": 0.552805}
+{"timestamp": "2026-02-10T06:20:57.052765", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49736, "duration": null}
+{"timestamp": "2026-02-10T06:20:57.076323", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49736, "username": "test", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:57.591694", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49736, "duration": 0.53892}
+{"timestamp": "2026-02-10T06:20:58.139706", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49738, "duration": null}
+{"timestamp": "2026-02-10T06:20:58.160731", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49738, "username": "test", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:58.669838", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49738, "duration": 0.530123}
+{"timestamp": "2026-02-10T06:20:59.204036", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49742, "duration": null}
+{"timestamp": "2026-02-10T06:20:59.229851", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49742, "username": "ubuntu", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:20:59.739468", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49742, "duration": 0.535401}
+{"timestamp": "2026-02-10T06:21:00.274162", "event": "connected", "source_ip": "172.21.0.1", "source_port": 49754, "duration": null}
+{"timestamp": "2026-02-10T06:21:00.339360", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 49754, "username": "ubuntu", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:00.850015", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 49754, "duration": 0.575849}
+{"timestamp": "2026-02-10T06:21:01.381761", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60606, "duration": null}
+{"timestamp": "2026-02-10T06:21:01.407109", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60606, "username": "ubuntu", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:01.915475", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60606, "duration": 0.533703}
+{"timestamp": "2026-02-10T06:21:02.452909", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60612, "duration": null}
+{"timestamp": "2026-02-10T06:21:02.484339", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60612, "username": "ubuntu", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:03.001559", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60612, "duration": 0.54864}
+{"timestamp": "2026-02-10T06:21:03.541568", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60624, "duration": null}
+{"timestamp": "2026-02-10T06:21:03.606724", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60624, "username": "ubuntu", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:04.117762", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60624, "duration": 0.576182}
+{"timestamp": "2026-02-10T06:21:04.666368", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60626, "duration": null}
+{"timestamp": "2026-02-10T06:21:04.691847", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60626, "username": "user", "credential": "password", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:05.199851", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60626, "duration": 0.533477}
+{"timestamp": "2026-02-10T06:21:05.737941", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60636, "duration": null}
+{"timestamp": "2026-02-10T06:21:05.771494", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60636, "username": "user", "credential": "123456", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:06.288195", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60636, "duration": 0.55025}
+{"timestamp": "2026-02-10T06:21:06.837063", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60652, "duration": null}
+{"timestamp": "2026-02-10T06:21:06.861453", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60652, "username": "user", "credential": "admin", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:07.368903", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60652, "username": "user", "credential": "", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:07.871215", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60652, "duration": 1.034126}
+{"timestamp": "2026-02-10T06:21:07.911793", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60660, "duration": null}
+{"timestamp": "2026-02-10T06:21:07.985203", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60660, "username": "user", "credential": "toor", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:08.489778", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60660, "duration": 0.577978}
+{"timestamp": "2026-02-10T06:21:09.029546", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60662, "duration": null}
+{"timestamp": "2026-02-10T06:21:09.090144", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60662, "username": "user", "credential": "12345678", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:09.598557", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60662, "duration": 0.569009}
+{"timestamp": "2026-02-10T06:21:10.125667", "event": "connected", "source_ip": "172.21.0.1", "source_port": 60664, "duration": null}
+{"timestamp": "2026-02-10T06:21:10.196528", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 60664, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:10.709323", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 60664, "duration": 0.583645}
+{"timestamp": "2026-02-10T06:21:11.244742", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44616, "duration": null}
+{"timestamp": "2026-02-10T06:21:11.310783", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44616, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:11.819433", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44616, "duration": 0.574692}
+{"timestamp": "2026-02-10T06:21:12.356547", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44624, "duration": null}
+{"timestamp": "2026-02-10T06:21:12.379435", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44624, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:12.887817", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44624, "duration": 0.531264}
+{"timestamp": "2026-02-10T06:21:13.427886", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44640, "duration": null}
+{"timestamp": "2026-02-10T06:21:13.452091", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44640, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:13.961009", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44640, "duration": 0.533115}
+{"timestamp": "2026-02-10T06:21:14.493248", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44652, "duration": null}
+{"timestamp": "2026-02-10T06:21:14.524421", "event": "auth_attempt", "source_ip": "172.21.0.1", "source_port": 44652, "username": "admin", "credential": "test123", "method": "password", "result": "failed"}
+{"timestamp": "2026-02-10T06:21:15.029618", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44652, "duration": 0.536359}
+{"timestamp": "2026-02-10T06:21:15.566588", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44656, "duration": null}
+{"timestamp": "2026-02-10T06:21:16.560533", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44656, "duration": 0.993945}
+{"timestamp": "2026-02-10T06:21:16.779061", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44672, "duration": null}
+{"timestamp": "2026-02-10T06:21:17.784071", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44672, "duration": 1.005003}
+{"timestamp": "2026-02-10T06:21:18.000283", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44680, "duration": null}
+{"timestamp": "2026-02-10T06:21:19.007462", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44680, "duration": 1.007176}
+{"timestamp": "2026-02-10T06:21:19.220831", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44686, "duration": null}
+{"timestamp": "2026-02-10T06:21:20.227038", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44686, "duration": 1.006196}
+{"timestamp": "2026-02-10T06:21:20.449379", "event": "connected", "source_ip": "172.21.0.1", "source_port": 44696, "duration": null}
+{"timestamp": "2026-02-10T06:21:21.464827", "event": "disconnected", "source_ip": "172.21.0.1", "source_port": 44696, "duration": 1.015446}

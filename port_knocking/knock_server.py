@@ -59,6 +59,7 @@ def setup_logging():
 
 def run_command(cmd, check=False):
     """Run a shell command and return the result."""
+    logger = logging.getLogger("KnockServer")
     try:
         result = subprocess.run(
             cmd,
@@ -67,8 +68,12 @@ def run_command(cmd, check=False):
             text=True,
             check=check
         )
+        if result.returncode != 0 and result.stderr:
+            logger.debug(f"Command failed: {cmd}")
+            logger.debug(f"stderr: {result.stderr}")
         return result.returncode == 0
-    except subprocess.CalledProcessError:
+    except subprocess.CalledProcessError as e:
+        logger.debug(f"Command exception: {cmd} - {e}")
         return False
 
 
